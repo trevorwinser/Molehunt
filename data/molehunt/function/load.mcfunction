@@ -19,7 +19,6 @@ scoreboard players set minutes Timer 30
 scoreboard players set hours Timer 1
 
 scoreboard players set @a Deaths 0
-scoreboard players set @a Alive 1
 scoreboard players set @a Molehunt 0
 
 gamemode survival @a

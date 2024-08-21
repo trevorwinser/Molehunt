@@ -1,3 +1,5 @@
+tag @a[tag=!mole,tag=!inno] add inno
+
 title @a[tag=mole] title {"text":"The Mole.","color":"red","bold":true}
 title @a[tag=inno] title {"text":"NOT The Mole.","color":"green","bold":true}
 execute as @a[tag=mole] at @s run tellraw @a[tag=mole,distance=1..] [{"selector":"@s","color":"red"},{"text":" is a Mole."}]

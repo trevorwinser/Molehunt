@@ -10,8 +10,13 @@ time set day
 gamerule announceAdvancements false
 gamerule showDeathMessages false
 
-scoreboard players operation count MoleFrequency = 1in MoleFrequency
+execute store result score Total MoleFrequency run list
+scoreboard players operation Moles MoleFrequency = Total MoleFrequency
+scoreboard players operation Moles MoleFrequency /= 1in MoleFrequency
+execute if score 1in MoleFrequency > Total MoleFrequency run tag @r[tag=!mole,tag=!inno] add mole
+execute if score 1in MoleFrequency > Total MoleFrequency run tag @a[tag=!mole,tag=!inno] add inno
 
-function molehunt:choose_roles
+function molehunt:choose_moles
+
 title @a title {"text":"You are...","color":"yellow","bold":true}
 schedule function molehunt:announce_role 3s
