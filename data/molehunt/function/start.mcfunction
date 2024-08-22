@@ -1,6 +1,5 @@
 
 scoreboard players set @a Deaths 0
-scoreboard players set @a Alive 1
 scoreboard players set @a Molehunt 0
 
 function molehunt:set_border

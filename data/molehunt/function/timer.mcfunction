@@ -1,4 +1,5 @@
 execute as @a[scores={Deaths=1}] run team join spec @s
+execute as @a[tag=!mole,tag=!inno] run team join spec @s
 gamemode spectator @a[team=spec]
 tag @a[team=spec] remove inno
 tag @a[team=spec] remove mole
