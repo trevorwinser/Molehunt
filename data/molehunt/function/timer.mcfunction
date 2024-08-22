@@ -1,3 +1,10 @@
+execute as @a[scores={Deaths=1}] run team join spec @s
+gamemode spectator @a[team=spec]
+tag @a[team=spec] remove inno
+tag @a[team=spec] remove mole
+execute store result score Moles Alive run tag @a[tag=mole] list
+execute store result score Innocents Alive run tag @a[tag=inno] list
+
 scoreboard players add ticks Timer 1
 
 execute if score ticks Timer matches 20 run scoreboard players remove seconds Timer 1

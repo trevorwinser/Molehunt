@@ -1,7 +1,5 @@
-execute if score Moles Alive matches 0 run title @a title {"text":"Innocents Win!","color":"green"}
+execute if score Innocents Alive matches 1.. run title @a title {"text":"Innocents Win!","color":"green"}
 execute if score Innocents Alive matches 0 run title @a title {"text":"Moles Win!","color":"red"}
-
-execute unless score Innocents Alive matches 0 unless score Moles Alive matches 0 run title @a title {"text":"Innocents Win!","color":"green"}
 
 scoreboard objectives remove Alive
 scoreboard objectives remove Deaths
