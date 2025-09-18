@@ -1,4 +1,5 @@
 execute if score Innocents Alive matches 1.. run title @a title {"text":"Innocents Win!","color":"green"}
+execute if score Innocents Alive matches 1.. run title @a subtitle {"text":"Moles failed to kill all the Innocents!","color":"red"}
 execute if score Innocents Alive matches 0 run title @a title {"text":"Moles Win!","color":"red"}
 
 scoreboard objectives remove Alive
@@ -18,6 +19,7 @@ worldborder set 59999968
 
 gamerule announceAdvancements true
 gamerule showDeathMessages true
+gamerule locatorBar true
 
 scoreboard objectives remove HourSettings
 scoreboard objectives remove MinuteSettings
@@ -34,4 +36,4 @@ scoreboard objectives remove BorderSettingsDisplay
 scoreboard objectives add Restart trigger
 scoreboard players enable @a Restart
 
-tellraw @a {"text":"[Restart]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Restart set 1"}}
+tellraw @a {"click_event":{"action":"run_command","command":"/trigger Restart set 1"},"color":"green","text":"[Restart]"}

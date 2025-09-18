@@ -1,14 +1,14 @@
-tellraw @s {"text":"[Configure Time]","color":"green","clickEvent":{"action":"run_command","value":"/trigger TimeSettingsDisplay set 1"}}
+tellraw @s {"click_event":{"action":"run_command","command":"/trigger TimeSettingsDisplay set 1"},"color":"green","text":"[Configure Time]"}
 
 tellraw @s ""
 
-tellraw @s {"text":"[Configure Moles]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MoleSettingsDisplay set 1"}}
+tellraw @s {"click_event":{"action":"run_command","command":"/trigger MoleSettingsDisplay set 1"},"color":"yellow","text":"[Configure Moles]"}
 
 tellraw @s ""
 
-tellraw @s {"text":"[Configure Border]","color":"red","clickEvent":{"action":"run_command","value":"/trigger BorderSettingsDisplay set 1"}}
+tellraw @s {"click_event":{"action":"run_command","command":"/trigger BorderSettingsDisplay set 1"},"color":"red","text":"[Configure Border]"}
 
 tellraw @s ""
 
-tellraw @s {"text":"[Start Game]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Molehunt set 1"}}
+tellraw @s {"click_event":{"action":"run_command","command":"/trigger Molehunt set 1"},"color":"gold","text":"[Start Game]"}
 scoreboard players set @s MainSettingsDisplay 0
